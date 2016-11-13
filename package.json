@@ -7,6 +7,17 @@
     "url": "git@github.com:francesco-strazzullo/js-proxies-type-system.git",
     "type": "git"
   },
+  "keywords": [
+    "Proxy",
+    "JavaScript"
+  ],
+  "scripts": {
+    "prestart": "yarn",
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "node publish"
+  },
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
