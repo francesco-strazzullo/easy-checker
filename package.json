@@ -16,8 +16,13 @@
     "start": "webpack-dev-server",
     "build": "webpack --config ./webpack.config.build.js",
     "predeploy": "webpack",
-    "deploy": "node tools/gh-pages"
+    "deploy": "node tools/gh-pages",
+    "prepublish": "npm run build"
   },
+  "ignore": [
+    "*",
+    "!index.js/"
+  ],
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
