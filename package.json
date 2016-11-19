@@ -1,8 +1,8 @@
 {
-  "name": "js-proxies-type-system",
-  "version": "1.0.0",
+  "name": "easy-typed.js",
+  "version": "0.0.1",
   "description": "An experiment to build a little type system for JavaScript with Proxies",
-  "main": "index.js",
+  "main": "typed.js",
   "repository": {
     "url": "git@github.com:francesco-strazzullo/js-proxies-type-system.git",
     "type": "git"
