@@ -1,6 +1,6 @@
 {
   "name": "easy-typed.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An experiment to build a little type system for JavaScript with Proxies",
   "main": "index.js",
   "repository": {
