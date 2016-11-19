@@ -1,18 +1,14 @@
-const validateString = (value, name) => {
-    if (typeof value !== 'string') {
-        throw new Error(`${value.constructor.name} is not a valid for '${name}' property. Should be String`);
-    }
-};
-
-const validateNumber = (value, name) => {
-    if(typeof value !== 'number') {
-        throw new Error(`${name.constructor.name} is not a valid for for '${name}' property. Should be Number`);
+const typeOfValidatorFactory = (expectation) => {
+    return (value,name) => {
+        if (typeof value !== expectation) {
+            throw new Error(`${value.constructor.name} is not a valid for '${name}' property. Should be String`);
+        }
     }
 };
 
 const validators = {
-    'String':validateString,
-    'Number':validateNumber
+    'String':typeOfValidatorFactory('string'),
+    'Number':typeOfValidatorFactory('number')
 };
 
 export default ({target, definition}) => {
