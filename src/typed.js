@@ -1,5 +1,5 @@
 const typeOfValidatorFactory = (expectation) => {
-    return (value,name) => {
+    return (value, name) => {
         if (typeof value !== expectation) {
             throw new Error(`${value.constructor.name} is not a valid for '${name}' property. Should be String`);
         }
