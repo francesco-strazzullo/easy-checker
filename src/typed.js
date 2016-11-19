@@ -7,8 +7,9 @@ const typeOfValidatorFactory = (expectation) => {
 };
 
 const validators = {
-    'String':typeOfValidatorFactory('string'),
-    'Number':typeOfValidatorFactory('number')
+    'String': typeOfValidatorFactory('string'),
+    'Number': typeOfValidatorFactory('number'),
+    'Boolean': typeOfValidatorFactory('boolean'),
 };
 
 export default ({target, definition}) => {
@@ -23,7 +24,7 @@ export default ({target, definition}) => {
 
         const validator = validators[currentDefinition.name] || (() => {});
 
-        validator(value,name);
+        validator(value, name);
 
         target[name] = value;
 
