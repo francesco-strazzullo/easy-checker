@@ -6,6 +6,15 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
+    <div>
+        <input id="input" />
+        <button class="btn btn-success" onclick="setSurname(document.getElementById('input').value)">Set Surname</button>
+        <button class="btn btn-success" onclick="setAge(document.getElementById('input').value)">Set Age</button>
+        <button class="btn btn-success" onclick="setAge(parseInt(document.getElementById('input').value))">Set Age as Number</button>
+    </div>
+    <span id="data"></span>
+    <hr />
+    <span id="error" class="bg-danger"></span>
 <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
 </body>
 </html>
