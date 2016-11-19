@@ -1,5 +1,9 @@
-# js-proxies-type-system
+# easy-typed.js
 An experiment to build a little type system for JavaScript with Proxies
+
+## Install
+
+    npm install easy-typed.js
 
 ## Run
     yarn install
