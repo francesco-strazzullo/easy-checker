@@ -1,3 +1,4 @@
+import 'proxy-polyfill';
 import typed from './typed';
 
 const DEFINITION = {
