@@ -13,4 +13,4 @@ Enjoy!
 
 ## Live Demo
 
-You can check an online demo of this application [here](https://francesco-strazzullo.github.io/js-proxies-type-system)
+You can check an online demo of this application [here](https://francesco-strazzullo.github.io/easy-typed.js)
