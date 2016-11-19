@@ -3,7 +3,7 @@ const typed = ({target, definition}) => {
 
     const set = (target,name,value) => {
         if(!definition[name]){
-            throw new Error(`${name} is not a valid properyy for this object`);
+            throw new Error(`${name} is not a valid property for this object`);
         }
 
         if(definition[name] === String && typeof value !== 'string'){
