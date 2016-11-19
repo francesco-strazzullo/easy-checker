@@ -2,9 +2,9 @@
   "name": "easy-typed.js",
   "version": "0.0.1",
   "description": "An experiment to build a little type system for JavaScript with Proxies",
-  "main": "typed.js",
+  "main": "easy-typed.js",
   "repository": {
-    "url": "git@github.com:francesco-strazzullo/js-proxies-type-system.git",
+    "url": "git@github.com:francesco-strazzullo/easy-typed.js.git",
     "type": "git"
   },
   "keywords": [
@@ -16,7 +16,7 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "predeploy": "npm run build",
-    "deploy": "node publish"
+    "deploy": "node tools/gh-pages"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
