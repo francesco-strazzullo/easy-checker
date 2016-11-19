@@ -1,16 +1,33 @@
+const validateString = (value, name) => {
+    if (typeof value !== 'string') {
+        throw new Error(`${value.constructor.name} is not a valid for '${name}' property. Should be String`);
+    }
+};
+
+const validateNumber = (value, name) => {
+    if(typeof value !== 'number') {
+        throw new Error(`${name.constructor.name} is not a valid for for '${name}' property. Should be Number`);
+    }
+};
+
+const validators = {
+    'String':validateString,
+    'Number':validateNumber
+};
+
 export default ({target, definition}) => {
     let proxy;
 
-    const set = (target,name,value) => {
-        if(!definition[name]){
+    const set = (target, name, value) => {
+        const currentDefinition = definition[name];
+
+        if (!currentDefinition) {
             throw new Error(`${name} is not a valid property for this object`);
         }
 
-        if(definition[name] === String && typeof value !== 'string'){
-            throw new Error(`${value.constructor.name} is not a valid for '${name}' property. Should be ${definition[name].name}`);
-        } else if (definition[name] === Number && typeof value !== 'number'){
-            throw new Error(`${name.constructor.name} is not a valid for this property. Should be ${definition[name].name}`);
-        }
+        const validator = validators[currentDefinition.name] || (() => {});
+
+        validator(value,name);
 
         target[name] = value;
 
@@ -21,7 +38,7 @@ export default ({target, definition}) => {
         set
     };
 
-    proxy = new Proxy(target,handler);
+    proxy = new Proxy(target, handler);
 
     return proxy;
 };
