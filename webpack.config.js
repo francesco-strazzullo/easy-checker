@@ -1,8 +1,15 @@
+var path = require('path');
+
 module.exports = {
     entry: "./src/index.js",
     output: {
         path: __dirname,
         filename: "bundle.js"
+    },
+    resolve: {
+        alias:{
+            'easy-typed':path.join(__dirname,'easy-typed.js')
+        }
     },
     module: {
         loaders: [

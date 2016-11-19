@@ -1,5 +1,5 @@
 import 'proxy-polyfill';
-import typed from './typed';
+import typed from 'easy-typed';
 
 const DEFINITION = {
     name: String,
