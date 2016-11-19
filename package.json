@@ -12,8 +12,11 @@
     "JavaScript"
   ],
   "scripts": {
+    "test-watch": "jest --watch",
+    "test": "jest",
     "prestart": "yarn",
     "start": "webpack-dev-server",
+    "prebuild": "npm test",
     "build": "webpack --config ./webpack.config.build.js",
     "predeploy": "webpack",
     "deploy": "node tools/gh-pages",
@@ -30,6 +33,7 @@
     "babel-preset-es2015": "6.5.0",
     "babel-preset-stage-1": "6.5.0",
     "gh-pages": "0.11.0",
+    "jest": "^17.0.3",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
     "yarn": "^0.16.1"
