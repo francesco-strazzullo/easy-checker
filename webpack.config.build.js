@@ -4,7 +4,7 @@ module.exports = {
     entry: path.join(__dirname,'lib','easy-typed.js'),
     output: {
         path: __dirname,
-        filename: "index.js"
+        filename: "dist.js"
     },
     module: {
         loaders: [

@@ -2,7 +2,7 @@
   "name": "easy-typed.js",
   "version": "0.0.2",
   "description": "An experiment to build a little type system for JavaScript with Proxies",
-  "main": "index.js",
+  "main": "dist.js",
   "repository": {
     "url": "git@github.com:francesco-strazzullo/easy-typed.js.git",
     "type": "git"
