@@ -1,10 +1,10 @@
 {
-  "name": "easy-typed.js",
-  "version": "0.0.2",
-  "description": "An experiment to build a little type system for JavaScript with Proxies",
+  "name": "easy-checker",
+  "version": "0.0.1",
+  "description": "An experiment to build a little validation system for JavaScript with Proxies",
   "main": "dist.js",
   "repository": {
-    "url": "git@github.com:francesco-strazzullo/easy-typed.js.git",
+    "url": "git@github.com:francesco-strazzullo/easy-checker.git",
     "type": "git"
   },
   "keywords": [

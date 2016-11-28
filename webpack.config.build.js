@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-    entry: path.join(__dirname,'lib','easy-typed.js'),
+    entry: path.join(__dirname,'lib','easy-checker.js'),
     output: {
         path: __dirname,
         filename: "dist.js"

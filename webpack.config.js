@@ -8,7 +8,7 @@ module.exports = {
     },
     resolve: {
         alias:{
-            'easy-typed':path.join(__dirname,'lib','easy-typed.js')
+            'easy-checker':path.join(__dirname,'lib','easy-checker.js')
         }
     },
     module: {
