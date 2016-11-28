@@ -2,9 +2,15 @@ import 'proxy-polyfill';
 import typed from 'easy-checker';
 
 const DEFINITION = {
-    name: String,
-    surname: String,
-    age: Number
+    name: {
+        type: String
+    },
+    surname: {
+        type: String
+    },
+    age: {
+        type: Number
+    }
 };
 
 const INITITAL_TARGET = {
@@ -13,8 +19,8 @@ const INITITAL_TARGET = {
 
 const person = typed({
     target:INITITAL_TARGET,
-    definition:DEFINITION}
-);
+    definition:DEFINITION
+});
 
 const printToDOM = () => {
     document.getElementById('data').innerText = JSON.stringify(person,undefined,2);
