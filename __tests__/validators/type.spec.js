@@ -1,4 +1,4 @@
-import validators from '../lib/validators'
+import { typeValidators as validators } from '../../lib/validators/type';
 
 describe('validators: string', () => {
     const stringValidator = validators.String;
