@@ -1,5 +1,5 @@
 # easy-checker.js
-An experiment to build a little type system for JavaScript with Proxies
+Easy JavaScript Object validation made with Proxies [![Build Status](https://travis-ci.org/francesco-strazzullo/easy-checker.svg?branch=master)](https://travis-ci.org/francesco-strazzullo/easy-checker)
 
 ## Install
 
